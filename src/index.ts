@@ -4,7 +4,7 @@ import simpleGit, {
   SimpleGit,
   SimpleGitOptions,
 } from 'simple-git'
-import {resolve} from 'path'
+import {resolve, relative} from 'path'
 import {writeFileSync} from 'fs'
 
 type CSVLine = [
@@ -141,7 +141,11 @@ class GitBranchCsv extends Command {
       outPath += dotFormat
     }
 
-    writeFileSync(resolve(outPath), data)
+    const dest = resolve(outPath)
+
+    writeFileSync(dest, data)
+
+    this.log(relative(process.cwd(), dest))
   }
 }
 
