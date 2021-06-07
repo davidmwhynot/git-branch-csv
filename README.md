@@ -20,7 +20,7 @@ $ npm install -g git-branch-csv
 $ git-branch-csv COMMAND
 running command...
 $ git-branch-csv (-v|--version|version)
-git-branch-csv/0.0.0 linux-x64 node-v14.16.0
+git-branch-csv/0.0.1 linux-x64 node-v14.16.0
 $ git-branch-csv --help [COMMAND]
 USAGE
   $ git-branch-csv COMMAND

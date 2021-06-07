@@ -1,7 +1,7 @@
 {
   "name": "git-branch-csv",
   "description": "Generate a csv file with data about a git repos branches.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "David Whynot <davidmwhynot@gmail.com>",
   "bin": {
     "git-branch-csv": "./bin/run"
